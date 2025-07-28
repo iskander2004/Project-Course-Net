@@ -23,8 +23,8 @@ La plateforme vise à faciliter l’accès à un contenu pédagogique organisé,
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/angular-user-dashboard.git
-```
+```git clone https://github.com/iskander2004/Project-Course-Net.git
+
 
 2. Install dependencies:
 ```bash
