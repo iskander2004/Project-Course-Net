@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="row">
+        <div class="card p-4  position-absolute top-50 start-50 translate-middle" style="width:600px;">
+            <div class="card-body">
+                <h5 class="card-title ">Sign up</h5>
+                <form>
+                    <div class="mb-3">
+                        <label for="nom-prenom" class="form-label">Nom complet :</label>
+                        <input type="text" class="form-control" id="nom-prenom" name="nom-prenom" (input)="valide_nom_et_prenom(user.nom_et_prenom)"     placeholder="Nom et Prénom" [(ngModel)]="user.nom_et_prenom">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="age" class="form-label">Age :</label>
+                        <input type="number" class="form-control" id="age" name="age" (input)=" valide_age(user.age)" placeholder="donner votre age" [(ngModel)] = "user.age">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="num-telephone" class="form-label">Numéro de téléphone :</label>
+                        <input type="text" class="form-control" id="num-telephone" name="num-telephone" (input)="valide_numero_de_telephone(user.numero_de_telephone)" placeholder="donner votre numéro de téléphone" [(ngModel)]="user.numero_de_telephone">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Adresse e-mail :</label>
+                        <input type="email" class="form-control" id="email" name="email"  (input)="checkEmail(user.email)" placeholder="donner votre email" aria-describedby="emailHelp" [(ngModel)]="user.email">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Mot de passe :</label>
+                        <input type="password" class="form-control" id="password" name="password" (input)="valide_passwords(user.password)" placeholder=" donner votre password" [(ngModel)]="user.password">
+                    </div>
+                    <div class="mb-3">
+                        <label for="confirm-password" class="form-label">Confirmer le mot de passe :</label>
+                        <input type="password" class="form-control" id="confirm-password" name="confirm-password" (input)=" valideconfirm_valide_passwords(user.confirm_password,user.password)" placeholder="Confirmer votre password" [(ngModel)]="user.confirm_password">
+                    </div>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button class="btn btn-primary" type="button" (click)="onEnvoyerSignUp()">envoyer</button>
+                </div>
+                </form> 
+            </div>
+        </div>
+    </div>
+</div>

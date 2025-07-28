@@ -1,0 +1,35 @@
+<div class="login-container position-absolute top-50 start-50 translate-middle">
+    <div class="login-header">
+        <h1>Login Page</h1>
+    </div>
+    
+    <form>
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email"  [(ngModel)]="user.email"  placeholder="Enter your email" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" [(ngModel)]="user.password"  placeholder="Enter your password" required>
+            <div class="forgot-password">
+                <a href="#">Forgot password?</a>
+            </div>
+        </div>
+      
+        <div class="recaptcha-box mb-3">
+            <input type="checkbox" id="notRobot">
+            <label class="recaptcha-text" for="notRobot">I'm not a robot</label>
+            <div class="recaptcha-logo">
+            <img src="https://www.gstatic.com/recaptcha/api2/logo_48.png" alt="reCAPTCHA">
+            <div>reCAPTCHA</div>
+            </div>
+        </div>
+        <div class="bt">
+            <button type="button" class="login-button" (click)="OnSubmit()">Login</button>
+        </div>
+        <div class="signup-link">
+            Don't have an account? <a [routerLink]="['/signup']"  >Sign up</a>
+        </div>
+    </form>
+</div>

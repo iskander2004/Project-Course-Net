@@ -1,0 +1,64 @@
+ <div class="container">
+        <div class="row">
+            <div class="card mx-auto mt-5 mb-5 p-4 shadow" style="width: 500px;">
+                <div class="card-body">
+                    <h5 class="card-title mb-5 text-center">Ajouter une formation :</h5>
+                    <form>
+                        <div class="mb-3">
+                            <label for="titre" class="form-label">Titre de la formation :</label>
+                            <input type="text" class="form-control" id="titre" name="titre" [(ngModel)]="forma.titre"> 
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="  description " class="form-label">Description de la formation :</label>
+                            <textarea class="form-control" id="description" name="description" rows="3" [(ngModel)]="forma.description"></textarea>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="date" class="form-label">La date prévue de la formation :</label>
+                            <input type="date" class="form-control" id="date" name="date" [(ngModel)]="forma.date">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="lieu" class="form-label">lieu de la formation :</label>
+                            <input type="text" class="form-control" id="lieu" name="lieu" [(ngModel)]="forma.lieu">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="formateur" class="form-label">formateur de la formation :</label>
+                            <input type="text" class="form-control" id="formateur" name="formateur" [(ngModel)]="forma.formateur">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="duree-formation" class="form-label">Durée (heures) :</label>
+                            <input type="number" class="form-control" id="duree-formation" name="duree-formation" min="1" [(ngModel)]="forma.duree">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="prix" class="form-label">Prix (TND) :</label>
+                            <input type="number" class="form-control" id="prix" name="prix" step="0.01" min="0" [(ngModel)]="forma.prix" >
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="image" class="form-label">Image :</label>
+                            <input class="form-control" type="file" id="image" name="image" accept="image/*" [(ngModel)]="forma.image" >
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="categorie" class="form-label">Catégorie :</label>
+                            <input type="text" class="form-control" id="categorie" name="categorie" [(ngModel)]="forma.categorie">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="places_dispo" class="form-label">Places disponibles :</label>
+                            <input type="number" class="form-control" id="places_dispo" name="places_dispo"  min="0" [(ngModel)]="forma.places_dispo" >
+                        </div>
+
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                            <button class="btn btn-primary me-md-2" type="button" (click)="ajouterFormation() ">Ajouter</button>
+                        </div>
+                    </form>  
+                </div>
+            </div>
+        </div>
+    </div>   
