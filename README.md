@@ -10,6 +10,7 @@ La plateforme vise à faciliter l’accès à un contenu pédagogique organisé,
 ## Technologies 
 
 - Angular 19
+- Snackbar Notifications
 - TypeScript
 - Fetch API (GET requests)
 - HTML5 & CSS3
