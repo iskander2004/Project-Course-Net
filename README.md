@@ -30,7 +30,7 @@ git clone https://github.com/iskander2004/Project-Course-Net.git
 
 2. Install dependencies:
 ```bash
-cd angular-Project-Course-Net
+cd Project-Course-Net
 npm install
 ```
 
