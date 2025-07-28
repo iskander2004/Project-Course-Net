@@ -18,13 +18,14 @@ La plateforme vise à faciliter l’accès à un contenu pédagogique organisé,
 - MySQL
 
 
+
 ## Installation
 
 1. Clone the repository:
 
 ```bash
-```git clone https://github.com/iskander2004/Project-Course-Net.git
-
+git clone https://github.com/iskander2004/Project-Course-Net.git
+```
 
 2. Install dependencies:
 ```bash
@@ -36,4 +37,5 @@ npm install
 ```bash
 ng serve --open
 ```
+
 
